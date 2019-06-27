@@ -83,7 +83,7 @@ print(e)
 """
 cb = np.zeros((8,8), dtype=int)
 
-
+index = []
 cb[1::2, ::2] = 1
 cb[::2, 1::2] = 1
 print(cb)
@@ -91,3 +91,11 @@ for _ in range (4):
     a,b = map(int,input("Where to place queen:").split())
     cb[a][b] = 9
     print(cb)
+
+    if a not in index and b not in index:
+        cb[a][b] = 9
+        index.append(a)
+        index.append(b)
+    else:
+        print("queen exists")
+print(cb)
