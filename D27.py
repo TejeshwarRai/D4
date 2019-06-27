@@ -101,3 +101,4 @@ print(np.log10(Z))
 # print(arr[:,2])
 # # print 7 using data.txt(only print ones not zeros)
 
+
