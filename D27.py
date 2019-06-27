@@ -94,3 +94,10 @@ print(np.sin(Z))
 print(np.log10(Z))
 '''
 
+# arr = np.loadtxt("data.txt")
+# print(arr)
+# print(arr[0])
+# print(arr[0,1])
+# print(arr[:,2])
+# # print 7 using data.txt(only print ones not zeros)
+
