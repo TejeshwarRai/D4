@@ -11,3 +11,6 @@ print(a.shape)
 print(a.ndim)       # dimension
 
 print()
+
+a2 = np.arrange(3,2,3)
+print(a2)
