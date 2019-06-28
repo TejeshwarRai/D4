@@ -51,30 +51,37 @@ plt.plot(y)
 plt.show()
 """
 
-x = list(range(0,11))
-y1 = [n for n in x]
-y2 = [n*n for n in x]
-y3 = [n*n*n for n in x]
+# x = list(range(0,11))
+# y1 = [n for n in x]
+# y2 = [n*n for n in x]
+# y3 = [n*n*n for n in x]
+#
+# print(x)
+# print(y1)
+# print(y2)
+# print(y3)
+#
+# plt.plot(x,y1, label = "y1")
+# plt.plot(x,y2, label = "y2")
+# plt.plot(x,y3, label = "y3")
+# plt.legend()
+#
+# plt.xlabel("X-Axis")
+# plt.ylabel("Y-Axis")
+#
+# plt.title("Polynomial Graphs")
+# plt.grid("true")
+# plt.grid(True)
+#
+# plt.xlim(0, 50)
+# plt.ylim(0, 2000)
+#
+# plt.savefig("1st Graph")        # to save graph
+# plt.show()
 
+"""
+x = np.random.randn(50)
 print(x)
-print(y1)
-print(y2)
-print(y3)
-
-plt.plot(x,y1, label = "y1")
-plt.plot(x,y2, label = "y2")
-plt.plot(x,y3, label = "y3")
-plt.legend()
-
-plt.xlabel("X-Axis")
-plt.ylabel("Y-Axis")
-
-plt.title("Polynomial Graphs")
-plt.grid("true")
-plt.grid(True)
-
-plt.xlim(0, 50)
-plt.ylim(0, 2000)
-
-plt.savefig("1st Graph")        # to save
+plt.hist(x,50)
 plt.show()
+"""
