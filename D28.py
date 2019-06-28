@@ -85,3 +85,22 @@ print(x)
 plt.hist(x,50)
 plt.show()
 """
+
+# a = [1,2,3,4,5,6,]
+# b = [12,43,12,65,86,34]
+#
+# plt.bar(a,b)
+# plt.show()
+
+scores = {"a":12,"b":23,"c":42,"d":30,"e":27}
+# plt.bar(0, scores["a"])
+# plt.bar(1, scores["b"])
+for i ,key in enumerate(scores):
+    plt.bar(key,scores[key])        # shows key name
+    # plt.bar(i,scores[key])        # shows 1,2
+
+plt.xlabel("abc")
+plt.ylabel("score")
+plt.title("runs")
+
+plt.show()
