@@ -37,17 +37,19 @@ for movie in movies:
 
 
 
-tagse = soup.find_all("td", class_="ratingColumn imdbRating")
-moviese = []
+tagsr = soup.find_all("td", class_="ratingColumn imdbRating")
+moviesr = []
 
-for tage in tagse:
-    datae = tage.text
-    moviese.append(datae.strip())
+for tagr in tagsr:
+    datar = tagr.text
+    moviesr.append(datar.strip())
 
 
-for moviee in moviese:
-    print(moviee)
+for movier in moviesr:
+    print(movier)
     print("*******")
 
-plt.bar(movies,moviese)
+plt.bar(movies,moviesr)
+plt.show()
+plt.bar(moviesr,movies)
 plt.show()
