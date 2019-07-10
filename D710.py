@@ -26,3 +26,4 @@ print("predicted class is", predictedclass)
 print("predicted class is", predictedclass[0])
 print("predicted class is", name[predictedclass[0]])
 # natural language/writing processing
+# tensorflow pytorch
