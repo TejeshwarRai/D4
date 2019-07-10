@@ -38,7 +38,6 @@ while 1:
 	# Detects faces of different sizes in the input image
 	faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-
 	for (x,y,w,h) in faces:
 		#To draw a rectangle in a face
 		#cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)
@@ -47,6 +46,7 @@ while 1:
 		center = (x + w // 2, y + h // 2)
 		#cv2.ellipse(img,center,(w//2, h//2), 0, 0, 360, (255, 0, 255), 4)
 		#Detects eyes of different sizes in the input image
+		img = cv2.ellipse(img, center, (w // 2, h // 2), 0, 0, 360, (255, 0, 255), 4)
 		if roi_gray.size!=0:
 		    eyes = eye_cascade.detectMultiScale(roi_gray)
 		i=0
